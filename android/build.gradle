@@ -1,6 +1,14 @@
 group 'com.posthog.posthog_flutter'
 version '1.0-SNAPSHOT'
 
+dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
 buildscript {
     ext.kotlin_version = '1.8.10'
     repositories {
@@ -51,18 +59,12 @@ android {
         minSdkVersion 21
     }
 
-     repositories {
-                    flatDir {
-                        dirs 'libs'
-                    }
-                }
-
     dependencies {
         testImplementation 'org.jetbrains.kotlin:kotlin-test'
         testImplementation 'org.mockito:mockito-core:5.0.0'
         // + Version 3.+ and the versions up to 4.0, not including 4.0 and higher
         // implementation 'com.posthog:posthog-android:3.+'
-        implementation(name: 'posthog-android', ext: 'aar')
+        implementation 'com.github.jiang1654:posthog-android:-SNAPSHOT'
     }
 
     testOptions {
