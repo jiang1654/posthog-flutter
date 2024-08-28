@@ -57,7 +57,7 @@ android {
 rootProject.allprojects { project ->
     try {
         // 这里的flutter_bdface_collect是flutter的约定, 插件的module名是插件名, :是gradle的约定. project前加:
-        if (project.properties.get("identityPath").toString() == ":flutter_bdface_collect") {
+        if (project.properties.get("identityPath").toString() == ":posthog_flutter") {
             moudleDir = project.properties.get("projectDir").toString()
         }
     } catch (e) {
