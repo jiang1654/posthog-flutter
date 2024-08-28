@@ -6,6 +6,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+
     }
 
     dependencies {
@@ -51,11 +52,20 @@ android {
         minSdkVersion 21
     }
 
+
+    repositories {
+         flatDir {
+            dirs 'libs'
+         }
+    }
+
     dependencies {
         testImplementation 'org.jetbrains.kotlin:kotlin-test'
         testImplementation 'org.mockito:mockito-core:5.0.0'
         // + Version 3.+ and the versions up to 4.0, not including 4.0 and higher
         // implementation 'com.posthog:posthog-android:3.+'
+        implementation files('libs/buildSrc.jar')
+        implementation files('libs/posthog-3.5.1.jar')
         implementation files('libs/posthog-android-release.aar')
     }
 
