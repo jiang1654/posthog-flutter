@@ -1,0 +1,115 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.posthog",
+    "module": "posthog",
+    "version": "3.5.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "posthog-3.5.1.jar",
+          "url": "posthog-3.5.1.jar",
+          "size": 173416,
+          "sha512": "0cbde586dcfb6413d83fac3dc0c8e47763f1a044b0f13424f744a3e2de0eb55c36d293259e738e94296ba03e17a4d0223357ac0978caea59393f9889dad310a3",
+          "sha256": "07e4ce59a4af0e558994c13051240d4adc246a205a1d712aa7ada6b02b597dd2",
+          "sha1": "cca9afdcba98ed8bcc56ea03ff736dea0f13f324",
+          "md5": "1e21e3a7b198d262589366a3a78638a4"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.22"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.10.1"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp-bom",
+          "version": {
+            "requires": "4.11.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp"
+        }
+      ],
+      "files": [
+        {
+          "name": "posthog-3.5.1.jar",
+          "url": "posthog-3.5.1.jar",
+          "size": 173416,
+          "sha512": "0cbde586dcfb6413d83fac3dc0c8e47763f1a044b0f13424f744a3e2de0eb55c36d293259e738e94296ba03e17a4d0223357ac0978caea59393f9889dad310a3",
+          "sha256": "07e4ce59a4af0e558994c13051240d4adc246a205a1d712aa7ada6b02b597dd2",
+          "sha1": "cca9afdcba98ed8bcc56ea03ff736dea0f13f324",
+          "md5": "1e21e3a7b198d262589366a3a78638a4"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "posthog-3.5.1-sources.jar",
+          "url": "posthog-3.5.1-sources.jar",
+          "size": 52416,
+          "sha512": "7ee3604a512e0a3f314bd94b20eac896a044dc5b8d7977b582b228821d085aec9bb0f860b7a2e5a836de7d75b0eaac852d8aa01dc169cb4b835e935ac15eb301",
+          "sha256": "9b0d3a93ef57ff981d2fcc2f033ccd22403936711ee5023cfa37bf78eb479bb3",
+          "sha1": "230f0f3c07a8c321c186e4246d277db3318af886",
+          "md5": "c554815c08860a62f701dd65fe8f5f69"
+        }
+      ]
+    }
+  ]
+}
