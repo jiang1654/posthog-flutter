@@ -1,14 +1,6 @@
 group 'com.posthog.posthog_flutter'
 version '1.0-SNAPSHOT'
 
-dependencyResolutionManagement {
-		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-		repositories {
-			mavenCentral()
-			maven { url 'https://jitpack.io' }
-		}
-	}
-
 buildscript {
     ext.kotlin_version = '1.8.10'
     repositories {
